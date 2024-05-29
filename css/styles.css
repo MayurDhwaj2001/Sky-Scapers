@@ -184,6 +184,28 @@ nav .hamburger .line {
   display: flex;
   flex-direction: row;
 }
+.line {
+  width: 5vw;
+  height: 4px;
+  background-color: #d7b46a;
+  margin: 0 auto 25px auto; /* Centers the line horizontally */
+  border-radius: 10px;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #1d1d1f;
+  background: #d7b46a;
+}
+
+::selection {
+  color: #1d1d1f;
+  background: #d7b46a;
+}
+
+img::selection {
+  background: transparent;
+}
 .red {
   background-color: red;
 }
@@ -895,7 +917,7 @@ input {
 }
 .header2 {
   margin-top: 5vh;
-  margin-bottom: 3vh;
+  padding-bottom: 3vh;
 }
 .card-container {
   display: flex;
@@ -908,6 +930,17 @@ input {
   position: relative;
   width: 300px;
   height: 250px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 10px;
+}
+.card2 {
+  position: relative;
+  width: 300px;
+  height: 300px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -931,6 +964,13 @@ input {
 }
 
 .card:hover .pink-line {
+  height: 100%;
+}
+.card2:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card2:hover .pink-line {
   height: 100%;
 }
 
