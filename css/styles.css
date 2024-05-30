@@ -97,6 +97,9 @@ section {
   }
 }
 /*  */
+.nav_margin {
+  padding-top: 8vh;
+}
 
 * {
   margin: 0;
@@ -109,7 +112,6 @@ section {
 body {
   background-color: #f5f5f7;
   color: #1d1d1f;
-  padding-top: 8vh;
 }
 /* Navigation styles Begin*/
 
