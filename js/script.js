@@ -1,9 +1,9 @@
 // Navbar Begin
-
-const hamburger = document.querySelector(".hamburger");
+const hamburgerContainer = document.querySelector(".hamburger-container");
 const navLinks = document.querySelector(".nav-links");
 
-hamburger.addEventListener("click", () => {
+hamburgerContainer.addEventListener("click", () => {
+  hamburgerContainer.classList.toggle("nav-active");
   navLinks.classList.toggle("nav-active");
 });
 
