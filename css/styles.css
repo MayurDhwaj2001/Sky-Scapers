@@ -117,7 +117,7 @@ body {
 
 #navbar {
   position: fixed;
-  transition: top 0.3s;
+  transition: top 0.7s;
   z-index: 99;
   width: 90%;
 }
