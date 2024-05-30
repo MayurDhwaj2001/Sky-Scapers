@@ -35,6 +35,22 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("toggle");
 });
 
+// scripts.js
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down
+    navbar.style.top = "-90px"; // Hide the navbar
+  } else {
+    // Scrolling up
+    navbar.style.top = "0";
+  }
+  lastScrollTop = scrollTop;
+});
+
 // Navbar End
 //
 

@@ -112,6 +112,13 @@ body {
 }
 /* Navigation styles Begin*/
 
+#navbar {
+  position: fixed;
+  transition: top 0.3s;
+  z-index: 99;
+  width: 90%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -246,6 +253,7 @@ nav {
 .nav-button:hover::before {
   width: 100%;
 }
+
 /* Navbar Ends */
 
 /*  */
