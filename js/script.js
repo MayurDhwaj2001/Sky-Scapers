@@ -1,10 +1,38 @@
-// Navbar Begin
-const hamburgerContainer = document.querySelector(".hamburger-container");
-const navLinks = document.querySelector(".nav-links");
+// const hamburgerContainer = document.querySelector(".hamburger-container");
+// const navLinks = document.querySelector(".nav-links");
+// const navLink = document.querySelectorAll(".remove");
 
-hamburgerContainer.addEventListener("click", () => {
-  hamburgerContainer.classList.toggle("nav-active");
+// const handleLinkClick = () => {
+//   hamburgerContainer.classList.remove("active");
+//   navLinks.classList.remove("nav-active");
+// };
+
+// hamburgerContainer.addEventListener("click", () => {
+//   hamburgerContainer.classList.toggle("active");
+//   navLinks.classList.toggle("nav-active");
+// });
+
+// navLink.forEach((link) => {
+//   link.addEventListener("click", handleLinkClick);
+// });
+
+// JavaScript
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("nav-active");
+  links.forEach((link, index) => {
+    if (link.style.animation) {
+      link.style.animation = "";
+    } else {
+      link.style.animation = `navLinkFade 0.5s ease forwards ${
+        index / 7 + 0.3
+      }s`;
+    }
+  });
+  hamburger.classList.toggle("toggle");
 });
 
 // Navbar End
