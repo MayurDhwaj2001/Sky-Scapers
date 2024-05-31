@@ -1297,6 +1297,13 @@ img::selection {
   .MainHeadding {
     font-size: 40px;
   }
+
+  .cursor {
+    display: none;
+  }
+  .cursor2 {
+    display: none;
+  }
 }
 /* Projects Section start */
 /* 
