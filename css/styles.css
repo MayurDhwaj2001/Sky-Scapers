@@ -187,7 +187,7 @@ nav {
 
   .nav-links {
     position: absolute;
-    right: 0;
+    right: -50px;
     height: 100vh;
     top: 0;
     background-color: #f5f5f7;
@@ -1284,12 +1284,18 @@ img::selection {
 @media (max-width: 768px) {
   .projects-card {
     width: 100%;
-    max-width: 300px;
+    /* max-width: 300px; */
+    width: fit-content;
     margin: 20px; /* Increased margin */
   }
 
   .flex-row {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .MainHeadding {
+    font-size: 40px;
   }
 }
 /* Projects Section start */
