@@ -370,6 +370,7 @@ img::selection {
   width: 40vw;
   position: absolute;
   pointer-events: none;
+  border-top-left-radius: 30%;
 }
 /* Hero End */
 /*  */
