@@ -1,9 +1,9 @@
 /* Reset styles */
 /* #DAFB94 */
-@font-face {
-  font-family: "Skyscapers";
-  src: url("//2ttf.com/webfont/6IF8GLA3aiM/webfont.ttf") format("truetype");
-}
+/* @font-face { */
+/* font-family: "Skyscapers"; */
+/* src: url("//2ttf.com/webfont/6IF8GLA3aiM/webfont.ttf") format("truetype"); */
+/* } */
 /* sample using the font */
 h1,
 h2,
@@ -15,9 +15,10 @@ h6 {
 }
 .headding1 {
   margin-top: 60px;
-  font-family: "Skyscapers";
+  font-family: "Exo", sans-serif;
+  font-style: italic;
   font-size: 80px;
-  font-weight: 100;
+  /* font-weight: 100; */
   color: #1d1d1f;
 }
 
@@ -49,36 +50,40 @@ section {
   align-items: center;
   font-size: 50px;
   padding: 20px 0px;
-  font-weight: 500px !important;
-  /* height: 10vh; */
+  font-family: "Montserrat", sans-serif;
+  /* font-style: */
+  font-weight: bold;
+  /* font-weight: 900px !important; */
 }
 .sotialmedia-container {
   margin: 30px 30px 30px 0;
 }
-
+.m-r {
+  margin-right: 15px;
+}
 .sotialmedia {
-  border: 2.3px solid #1d1d1f;
-  padding: 5px 10px;
+  /* border: 2.3px solid #1d1d1f; */
+  /* padding: 5px 10px; */
   font-size: 30px;
   color: #1d1d1f;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   transition: 0.4s;
 }
 .sotialmedia2 {
-  border: 2.3px solid #1d1d1f;
-  padding: 5px 8px;
+  /* border: 2.3px solid #1d1d1f; */
+  /* padding: 5px 8px; */
   font-size: 30px;
   color: #1d1d1f;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   transition: 0.4s;
 }
 .sotialmedia:hover {
-  color: #f5f5f7;
-  background-color: #1d1d1f;
+  color: #d7b46a;
+  /* background-color: #1d1d1f; */
 }
 .sotialmedia2:hover {
   color: #f5f5f7;
-  background-color: #1d1d1f;
+  /* background-color: #1d1d1f; */
 }
 
 /* mouse animation begin */
@@ -132,7 +137,7 @@ nav {
 }
 
 .logo-img-nav {
-  width: 80px;
+  width: 180px;
   margin-top: 2vh;
 }
 .nav-links {
@@ -361,9 +366,9 @@ img::selection {
   top: 150px;
 }
 .hero-img {
-  bottom: 0;
+  bottom: 1rem;
   right: 0;
-  width: 65vw;
+  width: 40vw;
   position: absolute;
   pointer-events: none;
 }
@@ -1003,8 +1008,13 @@ img::selection {
 /* 
  */
 /* second section begin */
+.second-section2 {
+  padding-top: 10vh;
+  /* height: 105vh; */
+  background-color: #f7f8fa;
+}
 .second-section {
-  padding-top: 5vh;
+  /* padding-top: 10vh; */
   /* height: 105vh; */
   background-color: #f7f8fa;
 }
@@ -1032,7 +1042,7 @@ img::selection {
 .card {
   position: relative;
   width: 300px;
-  height: 250px;
+  height: 280px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -1043,7 +1053,7 @@ img::selection {
 .card2 {
   position: relative;
   width: 300px;
-  height: 300px;
+  height: 330px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -1258,11 +1268,25 @@ img::selection {
   text-align: center;
 }
 
+.leadership-container {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
 @media (max-width: 768px) {
   .projects-card {
     width: 100%;
     max-width: 300px;
     margin: 20px; /* Increased margin */
+  }
+
+  .flex-row {
+    flex-direction: column;
   }
 }
 /* Projects Section start */
@@ -1342,13 +1366,13 @@ footer {
 }
 
 .sotial-gold {
-  border: 2.3px solid #f5f5f7;
+  /* border: 2.3px solid #f5f5f7; */
   color: #f5f5f7;
 }
 .sotial-gold:hover {
   color: #d7b46a;
-  background-color: #1d1d1f;
-  border: 2.3px solid #d7b46a;
+  /* background-color: #1d1d1f; */
+  /* border: 2.3px solid #d7b46a; */
 }
 
 @media (max-width: 820px) {
@@ -1375,3 +1399,7 @@ footer {
 }
 
 /* Footer Section End */
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
